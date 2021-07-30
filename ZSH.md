@@ -69,7 +69,7 @@ echo -e '\n\n# Plugins\nsource ~/.config/zsh/plugins/powerlevel10k/powerlevel10k
 echo -e '\n\n# ranger-cd\nfunction ranger-cd {\n    tempfile="$(mktemp -t tmp.XXXXXX)"\n    /usr/bin/ranger --choosedir="$tempfile" "${@:-$(pwd)}"\n    test -f "$tempfile" &&\n    if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then\n        cd -- "$(cat "$tempfile")"\n    fi  \n    rm -f -- "$tempfile"\n}\n\n#ranger-cd will run by alt+r\nbindkey -s "^\\er" "ranger-cd\\n"' >> ~/.config/zsh/.zshrc
 ```
 
-## Change 
+## ZSH as the default shell 
 
 * for `root`
 
@@ -79,6 +79,10 @@ sudo -s
 
 ```bash
 chsh -s /bin/zsh root
+```
+
+```bash
+exit
 ```
 
 * for `user`
