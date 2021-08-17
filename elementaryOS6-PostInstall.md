@@ -1,5 +1,19 @@
 # elementary OS 6 - Post Install
 
+## Update and Clean
+
+* Update
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+* Clean
+
+```bash
+sudo apt autoremove && sudo apt autoclean
+```
+
 ## Change the Hostname
 
 1. Change the hostname using `hostnamectl`
