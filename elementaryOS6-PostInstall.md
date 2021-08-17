@@ -16,7 +16,7 @@ sudo nano /etc/hosts
 
 ## Install Pantheon Tweaks
 
-Install needed packages
+Install the required packages
 
 ```bash
 sudo apt install -y software-properties-common
