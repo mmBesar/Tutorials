@@ -166,6 +166,6 @@ Change Sans-serif Arabic font to `Noto Sans Arabic` or `Noto Sans Arabic UI`
 sudo reboot now
 ```
 
-## For FlatPak apss
+## For FlatPak apps
 
 copy the `fonts.conf` file to `~/.var/app/APP-FOLDER/config/fontconfig/`
