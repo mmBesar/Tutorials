@@ -113,16 +113,16 @@ sudo fc-cache -f -v
 
 `NotoSansArabic-hinted` `Arimo` `Cousine` `Tinos` Fonts and extract and run
 
-https://bit.ly/3jdmH4a
-https://bit.ly/35TxicB
-https://bit.ly/35P6fPt
-https://bit.ly/3xQHi2d
-https://bit.ly/3qmvO42
+https://bit.ly/3jdmH4a  
+https://bit.ly/35TxicB  
+https://bit.ly/35P6fPt  
+https://bit.ly/3xQHi2d  
+https://bit.ly/3qmvO42  
 
-https://www.google.com/get/noto/#sans-arab
-https://fonts.google.com/specimen/Arimo
-https://fonts.google.com/specimen/Cousine
-https://fonts.google.com/specimen/Tinos
+https://google.com/get/noto/#sans-arab  
+https://fonts.google.com/specimen/Arimo  
+https://fonts.google.com/specimen/Cousine  
+https://fonts.google.com/specimen/Tinos  
 
 ```bash
 find . -name '*.zip' -exec sh -c 'unzip -d "${1%.*}" "$1"' _ {} \;
