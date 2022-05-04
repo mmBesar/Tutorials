@@ -28,3 +28,11 @@ make local-install
 
 > NOTE:  
 If you Get and error logout and login, then try the last two steps again
+
+## Fedora
+
+Install it from Fedora repostitories
+
+```sh
+sudo dnf install gnome-shell-extension-pop-shell
+```
