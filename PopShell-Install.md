@@ -1,6 +1,6 @@
 # Install Pop Shell on other GNOME DEs
 
-## Ubuntu and Ubuntu Based Distros
+## Ubuntu and Zorin OS Core (Ubuntu Based Distros)
 
 1. Install git and build dependencies
 
