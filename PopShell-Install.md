@@ -36,3 +36,7 @@ Install it from Fedora repostitories
 ```sh
 sudo dnf install gnome-shell-extension-pop-shell
 ```
+
+> REF:  
+[Using Pop Shell on other GNOME Desktops](https://support.system76.com/articles/pop-shell/)  
+[launcher](https://github.com/pop-os/launcher)
