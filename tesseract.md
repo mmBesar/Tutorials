@@ -18,7 +18,7 @@ sudo dnf install tesseract
 - Ubuntu
 
 ```sh
-sudo apt install tesseract
+sudo apt install tesseract-ocr
 ```
 
 - Arch
