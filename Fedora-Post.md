@@ -1,4 +1,6 @@
-## Fedora Post-installation Steps
+# Fedora Post-installation Steps
+
+## General Steps
 
 * Speed up DNF
 
@@ -64,6 +66,15 @@ sudo dnf install lame\* --exclude=lame-devel
 sudo dnf group upgrade --with-optional Multimedia
 ```
 
+* Install [ZSH](https://www.youtube.com/watch?v=fDuGKsQ3bV4)
+
+* Install Your Favorite Apps
+
+* Backups and Snapshots !!
+
+
+## Fedora Workstation ONLY
+
 * Install GNOME Tweaks
 
 ```sh
@@ -84,8 +95,17 @@ flatpak install flathub com.mattjakeman.ExtensionManager
 
 * Install Your [Extensions](https://www.youtube.com/watch?v=6yEJ43LLIJg)
 
-* Install [ZSH](https://www.youtube.com/watch?v=fDuGKsQ3bV4)
+## Fedora KDE Plasma ONLY
 
-* Install Your Favorite Apps
+* Enable Video Thumbnails in Dolphin
 
-* Backups and Snapshots !!
+1. Install `ffmpegthumbs`
+
+```sh
+sudo dnf install ffmpegthumbs
+```
+
+2. Enable it in Dolphin:
+
+From Dolphin Open:  
+Menu > Configure > Configure Dolphin > General > Previews > Video Files (ffmpegthumbs)
