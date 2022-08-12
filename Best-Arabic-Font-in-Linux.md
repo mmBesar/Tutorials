@@ -1,6 +1,55 @@
 # Best Arabic Font in Linux
 
-* Create `fonts.conf` in `~/.config/fontconfig/` with the below content
+> This Guide is for Ubuntu, Fedora 36+ has these configs by default.
+
+1. Update System
+
+```sh
+sudo apt update
+```
+
+2. Install `ubuntu-restricted-extras`
+
+```sh
+sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons
+```
+
+3. Download and Install Fonts
+
+- Download the below fonts
+
+[Noto Sans Arabic](https://fonts.google.com/specimen/Noto+Sans+Arabic)  
+[Arimo](https://fonts.google.com/specimen/Arimo)  
+[Cousine](https://fonts.google.com/specimen/Cousine)  
+[Tinos](https://fonts.google.com/specimen/Tinos)  
+
+- Extract it to its folders
+
+```bash
+find . -name '*.zip' -exec sh -c 'unzip -d "${1%.*}" "$1"' _ {} \;
+```
+
+- Install it on the system
+
+```bash
+sudo cp -r Arimo Cousine Tinos Noto_Sans_Arabic /usr/share/fonts/
+```
+
+4. Config File
+
+- Create `fontconfig` Folder
+
+```bash
+mkdir ~/.config/fontconfig
+```
+
+- Create `fonts.conf` file
+
+```bash
+nano ~/.config/fontconfig/fonts.conf
+```
+
+- Copy the below to the file
 
 ```xml
 <?xml version='1.0'?>
@@ -91,76 +140,21 @@
 </fontconfig>
 ```
 
-then run
+- Press CTRL+O to Save
 
-```bash
-fc-cache -fv
-```
+- Press CTRL+X to Exit
 
-or
-
-```bash
-sudo fc-cache -f -v
-```
-
-----
-
-## Step by Step
-
-`sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons`
-
-1. Download and Install Fonts
-
-`NotoSansArabic-hinted` `Arimo` `Cousine` `Tinos` Fonts and extract and run
-
-https://bit.ly/3jdmH4a  
-https://bit.ly/35TxicB  
-https://bit.ly/35P6fPt  
-https://bit.ly/3xQHi2d  
-https://bit.ly/3qmvO42  
-
-https://google.com/get/noto/#sans-arab  
-https://fonts.google.com/specimen/Arimo  
-https://fonts.google.com/specimen/Cousine  
-https://fonts.google.com/specimen/Tinos  
-
-```bash
-find . -name '*.zip' -exec sh -c 'unzip -d "${1%.*}" "$1"' _ {} \;
-```
-
-Set Permistions to `NotoSansArabic-hinted` folder
-
-```bash
-chmod 644 NotoSansArabic-hinted/*
-```
-
-Install on System
-
-```bash
-sudo cp -r Arimo Cousine Tinos NotoSansArabic-hinted /usr/share/fonts/
-```
-
-2. Config File
-
-```bash
-mkdir ~/.config/fontconfig
-```
-
-```bash
-cp font-conf/fonts.conf ~/.config/fontconfig
-```
-
-3. Update Fonts and Config
+5. Update Fonts and Config
 
 ```bash
 sudo fc-cache -fv
 ```
 
-4. Firefox
+6. Firefox
 
 Change Sans-serif Arabic font to `Noto Sans Arabic` or `Noto Sans Arabic UI`
 
-5. Reboot
+7. Reboot
 
 ```bash
 sudo reboot now
@@ -168,4 +162,13 @@ sudo reboot now
 
 ## For FlatPak apps
 
-copy the `fonts.conf` file to `~/.var/app/APP-FOLDER/config/fontconfig/`
+copy the `fonts.conf` file to `~/.var/app/<APP-FOLDER>/config/fontconfig/`
+
+----
+
+> Links from the old tutorial:  
+https://bit.ly/3jdmH4a  
+https://bit.ly/35TxicB  
+https://bit.ly/35P6fPt  
+https://bit.ly/3xQHi2d  
+https://bit.ly/3qmvO42 
