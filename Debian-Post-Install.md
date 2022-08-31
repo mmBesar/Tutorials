@@ -61,9 +61,29 @@ sudo apt install nvidia-detect
 sudo nvidia-detect
 ```
 
+## CPU Microcode
+
+- For Intel CPUs
+
+```sh
+sudo apt install intel-microcode
+```
+
+- For AMD CPUs
+
+```sh
+sudo apt install amd64-microcode
+```
+
 ## Better Software center (for Xfce Only)
 
 ```sh
 sudo apt install gnome-software
 sudo apt install gnome-software-plugin-flatpak
+```
+
+## Better Battery Life - Optional and for laptops only
+
+```sh
+sudo apt install tlp
 ```
