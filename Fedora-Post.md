@@ -109,3 +109,9 @@ sudo dnf install ffmpegthumbs
 
 From Dolphin Open:  
 Menu > Configure > Configure Dolphin > General > Previews > Video Files (ffmpegthumbs)
+
+## Fedora Xfce ONLY
+
+```sh
+sudo dnf install tumbler tumbler-extras ffmpegthumbnailer
+```
