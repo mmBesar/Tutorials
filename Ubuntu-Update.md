@@ -11,5 +11,5 @@ sudo apt update && sudo apt upgrade -y && flatpak update -y && sudo snap refresh
 add the below line to `.bashrs` or `.zshrc`
 
 ```sh
-alias update='sudo apt update && sudo apt upgrade -y && flatpak update -y && sudo snap refresh`
+alias update='sudo apt update && sudo apt upgrade -y && flatpak update -y && sudo snap refresh'
 ```
