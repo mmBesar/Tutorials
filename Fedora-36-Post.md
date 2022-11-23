@@ -1,4 +1,4 @@
-# Fedora Post-installation Steps
+# Fedora 36 Post-installation Steps
 
 ## General Steps
 
